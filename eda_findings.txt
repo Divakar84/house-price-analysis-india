@@ -1,0 +1,58 @@
+Exploratory Data Analysis (EDA) Findings
+Dataset: House Price India
+
+1. Dataset Overview
+- Total records: 14,619
+- Total features: 23
+- Target variable: Price
+- Data quality: Clean dataset with no missing values
+- Data types: Mix of numerical and categorical variables
+
+2. Price Distribution
+- House prices show a right-skewed distribution.
+- Majority of properties fall within the mid-price range.
+- A small number of properties are extremely expensive, indicating the presence of high-value luxury homes.
+- These high values are realistic and not data errors.
+
+3. Key Factors Influencing House Prices
+Strong Positive Influence:
+- Living Area: Larger living spaces significantly increase house prices.
+- Number of Bathrooms: Stronger impact on price than number of bedrooms.
+- Waterfront: Houses with waterfront access are priced much higher.
+- View: Houses with better views command premium prices.
+- Renovated Living Area: Renovated homes have higher market value.
+
+Moderate Influence:
+- Number of Bedrooms
+- Lot Area
+- House Condition
+- Built Year (newer houses tend to be more expensive)
+
+Weak / Negative Influence:
+- Distance from Airport: Greater distance reduces price.
+- Renovation Year = 0 (not renovated) lowers property value.
+- Older houses generally sell at lower prices.
+
+4. Outlier Analysis
+- Outliers detected mainly in Price, Living Area, and Lot Area.
+- These outliers represent luxury properties.
+- Recommended handling method: capping (winsorization) instead of removal.
+
+5. Correlation Insights
+- Price has strong correlation with:
+  - Living Area
+  - Bathrooms
+  - Waterfront
+  - View
+- Low multicollinearity observed among features, making the dataset suitable for regression models.
+
+6. Business Insights
+- Renovation significantly improves resale value.
+- Waterfront and scenic view properties generate higher returns.
+- Larger homes with modern facilities are more profitable.
+- Location and amenities play a crucial role in pricing.
+
+7. Conclusion
+- The dataset is well-structured, clean, and analysis-ready.
+- Ideal for price prediction models and real estate market analysis.
+- Clear patterns exist between property features and house prices.
